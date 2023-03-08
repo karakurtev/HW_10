@@ -25,7 +25,8 @@
 
 .logo, .search {
     width: 100px;
-}
+    }
+   
 .logo{
     line-height: 17px;
 }
@@ -55,8 +56,8 @@ position: relative;
 
 }
 
-.menu  li:hover .menu li {
-    background: grey;
+.menu  li:hover{
+    background: white;
 }
 
 .menu > li:hover .menu-2{
@@ -103,7 +104,23 @@ position: relative;
 
 .menu li a.active {
     color: rgb(142, 34, 34);
+
 }
+
+/* ----MAIN ------ */
+
+.main_page {
+    font-size: 300px;
+	font-weight: 900;
+    font-family: 'Ultra';
+    text-transform: uppercase;
+    text-align: center;
+	height: min-content;
+	color: rgba(0, 0, 0, 0);
+	background: url('../images/main_page.jpg') no-repeat 50%/cover;
+	background-clip: text;
+	-webkit-background-clip: text;
+  	}
 
 
 
@@ -356,8 +373,31 @@ p + p {
 
     background: rgb(180, 161, 180);
     color: bisque;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center ;
 }
 
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.icons a {
+    display: block;
+}
+
+
+.footer-icon {
+	width: 50px;
+	height: 50px;
+	fill: white;
+    /* background: green; */
+}
+
+
+.footer-icon:hover {
+	fill: rgb(142, 34, 34);
+}
 /* ________________________________________  */
