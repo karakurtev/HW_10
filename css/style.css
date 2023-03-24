@@ -166,7 +166,49 @@ position: relative;
   	}
 
 
+/*   HOWER MENU */
 
+.hover_menu {
+    border-radius: 6px;
+    background: rgb(63, 22, 59);
+    font-family: 'Ultra';
+    font-size: 30px;
+    position: fixed;
+    right: 50px;
+    bottom: -170px;
+    text-align: center;
+    width: 210px;
+    transition: all .4s linear;
+}
+.hover_menu:hover {
+    bottom: 0;
+    transition: all .4s linear;
+    
+}
+
+.hover_me {
+    padding: 10px;
+    
+}
+
+.hover_ul {
+    margin: 20px 45px;
+   transform:rotate(45deg) scale(1) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+}
+
+
+
+.hover_icons {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hover_icons li {
+    transform:rotate(-45deg) scale(1) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+
+}
 
 /* INLINE-blok */
 
