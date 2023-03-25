@@ -175,21 +175,62 @@ position: relative;
     font-size: 30px;
     position: fixed;
     right: 50px;
-    bottom: -170px;
+    bottom: 0;
     text-align: center;
     width: 210px;
+    transform: translateY(calc(100% - 50px));
     transition: all .4s linear;
-}
-.hover_menu:hover {
-    bottom: 0;
-    transition: all .4s linear;
+
     
 }
 
+
+.hover_menu:hover {
+    transform: translateY(0);
+    transition: all .4s linear;
+    animation: none;    
+}
+
+.hover_menu:hover .hover_me {
+    animation: none;
+}
+
+@-webkit-keyframes hvr-buzz {
+    50% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+  }
+  @keyframes hvr-buzz {
+    50% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+  }
+
+
+
 .hover_me {
     padding: 10px;
+    animation-name: hvr-buzz;
+    animation-duration: 0.15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
     
 }
+
+ /* .hover_me:hover {
+animation: none;
+} */
+
 
 .hover_ul {
     margin: 20px 45px;
